@@ -20,52 +20,67 @@
       <a href="About.html">About</a>
       <a href="Contact.html">Contact Us </a>
     </nav>
-    <div class="contact-wrapper">
-      <div class="right">
+
+    <div class="cont">
+      <div class="form sign-in">
+        <h2>Welcome to education hub</h2>
+        <div class="img__btn">
+          <span class="m--up">Sign Up </span>
+        </div>
         <img
           style="
-            width: 400px;
-            margin-left: 18%;
+            width: 300px;
+            height: 300px;
             position: absolute;
-            height: 750px;
-            margin-top: -6%;
             border-radius: 50px;
+            margin-left: 170px;
+            margin-top: 100px;
           "
-          src="images/bg.jpg"
+          src="images/bg.Jpg   "
         />
       </div>
-      <div class="right_side">
-        <img src="images/bg.svg" />
-        <h2>Account Login</h2>
-        <form>
-          <div class="form-row">
-            <input type="text" required />
-            <span>Username or Email</span>
-          </div>
-          <div class="form-row">
-            <input type="password" required />
+
+      <div class="sub-cont">
+        <div class="form sign-up">
+          <h2>Time to feel like home,</h2>
+          <label>
+            <span>First Name</span>
+            <input type="text" />
+          </label>
+          <label>
+            <span>Last Name</span>
+            <input type="text" />
+          </label>
+          <label>
+            <span>UserName</span>
+            <input type="text" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" />
+          </label>
+          <label>
             <span>Password</span>
-          </div>
-          <div class="form-row"></div>
-          <div class="form-row">
-            <button type="submit">Login to your Account</button>
-          </div>
-          <div class="form-row">
-            <h3 style="margin-left: 23%">Not with us yet?</h3>
-          </div>
-          <a style="margin-left: 28%" class="join" href="SignUpForm.html"
-            >Join Us Now
-          </a>
-        </form>
-        <div class="socials-wrapper"></div>
+            <input type="password" />
+          </label>
+          <label>
+            <span>Phone Number</span>
+            <input type="number" />
+          </label>
+          <button type="button" class="submit">Sign Up</button>
+        </div>
       </div>
     </div>
 
-    <a href="Home.html"> <img src="images/ASC.png" class="zoom" /> </a>
+    <script>
+      document
+        .querySelector(".img__btn")
+        .addEventListener("click", function () {
+          document.querySelector(".cont").classList.toggle("s--signup");
+        });
+    </script>
+    <img src="images/ASC.png" class="zoom" />
   </body>
-  <h1 style="bottom: 50%; margin-left: 140px; position: absolute; color: white">
-    Welcome to Education Hub
-  </h1>
   <footer>
     <div class="socials-wrapper">
       <ul>

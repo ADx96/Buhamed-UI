@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="A.fonts,,_icomoon,,_style.css+css,,_bootstrap.min.css+css,,_style.css,Mcc.N4fnqeXTkX.css.pagespeed.cf.4q8_lNxMgd.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -11,7 +16,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Sign In</title>
+    <link rel="stylesheet" href="style2.css" />
+    <title>Account</title>
   </head>
   <body>
     <nav>
@@ -20,52 +26,42 @@
       <a href="About.html">About</a>
       <a href="Contact.html">Contact Us </a>
     </nav>
-    <div class="contact-wrapper">
-      <div class="right">
-        <img
-          style="
-            width: 400px;
-            margin-left: 18%;
-            position: absolute;
-            height: 750px;
-            margin-top: -6%;
-            border-radius: 50px;
-          "
-          src="images/bg.jpg"
-        />
-      </div>
-      <div class="right_side">
-        <img src="images/bg.svg" />
-        <h2>Account Login</h2>
-        <form>
-          <div class="form-row">
-            <input type="text" required />
-            <span>Username or Email</span>
-          </div>
-          <div class="form-row">
-            <input type="password" required />
-            <span>Password</span>
-          </div>
-          <div class="form-row"></div>
-          <div class="form-row">
-            <button type="submit">Login to your Account</button>
-          </div>
-          <div class="form-row">
-            <h3 style="margin-left: 23%">Not with us yet?</h3>
-          </div>
-          <a style="margin-left: 28%" class="join" href="SignUpForm.html"
-            >Join Us Now
-          </a>
-        </form>
-        <div class="socials-wrapper"></div>
+    <div class="background"></div>
+
+    <img src="images/ASC.png" class="zoom" />
+    <h1 style="padding-left: 40%; color: white">My Account</h1>
+    <div id="wrapper">
+      <div class="invitation">
+        <main class="main">
+          <form id="inviteForm"></form>
+
+          <ul id="invitedList">
+            <li>
+              <p>John Smith</p>
+              <span>Username</span>
+
+              <button>edit</button>
+            </li>
+            <li>
+              <p>Amanda Scott</p>
+              <span>Email</span>
+
+              <button>edit</button>
+            </li>
+            <li>
+              <p type="password">Amanda Scott</p>
+              <span>Password</span>
+
+              <button>edit</button>
+            </li>
+          </ul>
+        </main>
       </div>
     </div>
-
     <a href="Home.html"> <img src="images/ASC.png" class="zoom" /> </a>
+    <!-- custom js -->
+    <script type="text/javascript" src="app.js"></script>
   </body>
-  <h1 style="bottom: 50%; margin-left: 140px; position: absolute; color: white">
-    Welcome to Education Hub
-  </h1>
   <footer>
     <div class="socials-wrapper">
       <ul>
@@ -85,7 +81,7 @@
         </li>
         <li><i class="fa fa-github" aria-hidden="true"></i></li>
       </ul>
-      <h3 style="margin-left: 45%; color: white">
+      <h3 style="margin-left: 44%; color: white">
         Education Hub<i class="far fa-copyright"></i>
       </h3>
     </div>
